@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   alas <input type="text" id="alas"><br><br>
+   tinggi <input type="text" id="t"><br><br>
+   panjang  <input type="text" id="pan"><br><br>
+    <button onclick=" submit()">proses</button><br><br>
+    <input type="text"  id="demo1"><br><br>
+    <input type="text"  id="demo2">
+</body>
+<script>
+ function submit(){
+      var alas = document.getElementById("alas").value;
+      var t = document.getElementById("t").value;
+      var pan = document.getElementById("pan").value;
+      
+    var a = pan * 3;
+     var jum = 1/2 * alas * t;
+    document.getElementById("demo1").value = "luasnya adalah :"+ jum;
+document.getElementById("demo2").value = "keliling : " + a;
+    }
+    submit(alas,t,1/2,3)
+</script>
+</html>

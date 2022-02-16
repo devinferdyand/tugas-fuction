@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    paajng<input type="text" id="panjang"><br><br>
+    lebar <input type="text" id="lebar">
+    <button onclick="submit()">proses</button><br><br>
+
+    <input type="text"  id="demo1"><br><br>
+    <input type="text"  id="demo2">
+
+</body>
+<script>
+   function submit(){
+       var panjang = document.getElementById("panjang").value;
+       var lebar = document.getElementById("lebar").value;
+       luas =  panjang * lebar;
+       document.getElementById("demo1").value = "luasnya adalah :"+ luas;
+       sem =  panjang + lebar;
+       kel = sem * 2;
+       document.getElementById("demo2").value = "keliling adalah :" + kel;
+
+   }
+     submit(panjang,lebar,2)
+
+</script>
+</html>

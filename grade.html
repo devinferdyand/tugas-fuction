@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+</head>
+<body>
+    <div class="jumbotron bg-dark">
+  nilai siswa
+</div>
+<center>
+<input type="text" placeholder="nil" id="nil" class="form-control col-sm-5"><br>
+<button onclick="submit()" class="btn btn-primary form-control col-sm-5"">submit</button>
+</center>
+    <script>
+
+         function submit(){
+             var nil = document.getElementById("nil").value;
+   if(nil<50)
+    document.write("d")
+ else if (nil<60)
+ document.write("c")
+ else if (nil<70)
+ document.write("c")
+ else if (nil<85)
+ document.write("b")
+ else if (nil<=100 && nil>=85)
+ document.write("a")
+ else{
+alert("gada")
+         }
+        }
+ </script>
+
+</body>
+</html>
